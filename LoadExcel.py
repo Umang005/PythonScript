@@ -9,8 +9,10 @@ name=sys.argv[1]
 fig = plt.figure(figsize = (10, 5))
 plt.bar(df["Student Name"],df[name],color='maroon',width=0.4)
 
-plt.xlabel("Courses offered")
-plt.ylabel("No. of students enrolled")
-plt.title("Students enrolled in different courses")
+plt.xlabel("Students Name")
+plt.ylabel("Marks Obtained")
+plt.title("Students comparision ")
 plt.show()
+
+
 
