@@ -2,7 +2,6 @@ import pandas as pd
 import sys
 import matplotlib.pyplot as plt
 df = pd.read_csv(r"C:\Users\Ashish\Documents\USE CASE\Student.csv")
-df["Percentage"]=(df["Maths"]+df["Physics"]+df["Chemistry"])*0.3
 print(df)
 Student_name=sys.argv[1]
 Subject_name=sys.argv[2]
@@ -22,6 +21,7 @@ plt.xlabel("Students Name")
 plt.ylabel("Marks Obtained in "+str(GR_Subject))
 plt.title("Students comparision ")
 plt.show()
+df["Percentage"]=(df["Maths"]+df["Physics"]+df["Chemistry"])*0.3
 df.to_csv(r"C:\Users\Ashish\Documents\USE CASE\Student.csv",index=False)
 
 
